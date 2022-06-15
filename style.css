@@ -1,0 +1,239 @@
+/*DESCRIÇÃO
+Todos os exercícios estão sujeitos a diversas formas de desenvolvimento.
+Fica a critério do desenvolvedor implementar os códigos de acordo com
+suas experiências e propor os formatos que achar necessário. Podem ser
+propostos nos exercícios múltiplos formatos de codificação.
+
+QUESTÃO 1) Construa os elementos básicos para formar uma página HTML. Ela não
+precisa ter nenhum conteúdo.*/
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <section>
+
+    </section>
+    <footer>
+        
+    </footer>
+</body>
+</html>
+
+/*QUESTÃO 2) Em um determinado projeto os cabeçalhos devem estar previamente
+definidos com fonte Arial, devem estar em negrito e em caixa alta. Como você faria
+para esses parâmetros serem implementados neste projeto?*/
+header{
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*QUESTÃO 3) Construa utilizando HTML e JavaScript um link que ao ser clicado, abre um
+alerta do navegador.*/
+<a href="#" target="_blank" onclick="link()" rel="noopener noreferrer">Clica em mim</a>
+
+    <script>
+        function link(){
+            alert("Eu Vou ser contratado")
+        }
+    </script>
+
+
+/*QUESTÃO 4) Descreva em CSS a seguinte regra: todos os itens de uma lista devem
+estar orientados na vertical.*/
+.lista{
+    display: flex;
+    flex-direction: column;
+}
+
+/*QUESTÃO 5) Descreva em CSS a seguinte regra: somente o último item de uma lista
+não deve ter uma linha na sua base.*/
+
+/*QUESTÃO 6) Um arquivo externo chamado styles.css precisa ser carregado na página
+HTML. Escreva o código para fazer tal carregamento.*/
+<link rel="stylesheet" type="text/css" href="style.css">
+
+/*QUESTÃO 7) Um dos critérios de um determinado projeto é que todos os links devem
+ficar sublinhados quando o usuário passar o mouse por cima deles. Escreva o código
+para garantir essa regra.*/
+a:hover{
+    border-bottom: 1px solid black;
+}
+
+/*QUESTÃO 8) Escreva um comando JavaScript onde o texto Hello World! seja exibido no
+console do navegador através de uma variável.
+
+QUESTÃO 9) Usando o mesmo código da questão anterior, substitua o texto que será
+exibido no console do navegador para Hello Toodoo! O novo valor deve sobrescrever o
+valor original.*/
+
+
+/*QUESTÃO 10) Desenvolva via JavaScript a seguinte estrutura de código levando em
+consideração as seguintes regras:
+a) Uma variável deve ter o nome de sorvete de chocolate;
+b) Se o seu valor for igual a chocolate, deve ser exibido no alerta do navegador a
+mensagem: Amo sorvete de chocolate;
+c) Se o seu valor for outro, deve exibir a mensagem: Prefiro outros sabores.
+
+Teste de Desenvolvimento
+
+Web
+
+TooDoo Desenvolvimento de Software LTDA
+QUESTÃO 11) Na função JavaScript a seguir, responda quais serão os resultados
+respectivos:*/
+function multiplicacao (num1,num2) {
+let resultado = num1 * num2;
+return resultado;
+}
+multiplica(4, 7);	
+28
+multiplica(5, 6);
+30
+multiplica(3, 3);
+9
+QUESTÃO 11) Em CSS existe uma maneira de sobrescrever um estilo, quando não há
+outra maneira, além dessa, de se fazer isso. Qual das propriedades a seguir é utilizada
+para isso?
+(a) force
+(b) Strong
+X(c) !important
+(d) nenhuma das alternativas
+/*QUESTÃO 12) Analisando a estrutura CSS a seguir, qual cor prevalecerá no elemento
+HTML?*/
+
+li.list-item {
+color: red;
+}
+.list-item {
+color: blue
+}
+#list .list-item {
+color: green
+}
+ul li {
+color: black;
+}
+(a) red
+(b) blue
+(c) green
+X(d) black
+
+/*Teste de Desenvolvimento
+
+Web
+
+TooDoo Desenvolvimento de Software LTDA
+QUESTÃO 13) Levando em consideração a semântica de código, escreva o HTML de
+uma tabela que possui as seguintes características:
+a) Deve possuir 3 colunas (Nome, Idade, Gênero);
+b) Deve possuir 2 linhas (com dados fictícios);
+c) E uma última linha com todas as suas colunas mescladas.*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+
+        .teste{
+            display: flex;
+            flex-direction: row;
+            
+            width: 30%;
+        }
+        .coluna{
+            padding: 30px;
+        }
+        
+        .c1{
+            margin-right: 15px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .c2{
+            margin-right: 15px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .c3{
+            margin-right: 15px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .teste0{
+            border-top: 1px solid white;
+            padding: 30px;
+        }
+        </style>
+</head>
+
+<body>
+    
+    <section class="teste">
+
+        <div class="coluna c1">
+            <h1>Nome</h1>
+
+            <div class="teste0">
+                <H2>Natanael</H2>
+            </div>
+
+            <div class="teste0">
+                <H2>Heitor</H2>
+            </div>
+        </div>
+
+        
+        <div class="coluna c2">
+            <h1>idade</h1>
+
+            <div class="teste0">
+                <H2>21</H2>
+            </div>
+
+            <div class="teste0">
+                <H2>20</H2>
+            </div>
+            
+        </div>
+
+        <div class="coluna c3">
+            <h1>Gênero</h1>
+
+            <div class="teste0">
+                <H2>Masculino</H2>
+            </div>
+
+            <div class="teste0">
+                <H2>Masculino</H2>
+            </div>
+            
+        </div>
+
+    </section>
+
+   
+</body>
+</html>
+
+
+/*QUESTÃO 14) Utilizando grid system, não sendo necessário a responsividade, elabore
+uma página web que siga o layout da imagem abaixo:
+
+QUESTÃO 15) Crie uma página web conforme o layout abaixo que seja responsiva para
+ser utilizada nos diferentes navegadores e dispositivos:*/
